@@ -31,3 +31,17 @@ jobs:
         uses: github/codeql-action/autobuild@v3
       - if: steps.source.outputs.present == 'true'
         uses: github/codeql-action/analyze@v3
+        with:
+          output: ../codeql-results
+          upload: false
+      - name: Enforce CodeQL findings
+        if: steps.source.outputs.present == 'true'
+        shell: bash
+        run: |
+          if jq -e '[.runs[].results[]? | select(.level == "error" or .level == "warning")] | length == 0' ../codeql-results/*.sarif >/dev/null; then
+            echo "CodeQL found no warning or error results."
+          else
+            echo "CodeQL found security results that require review."
+            jq -r '.runs[].results[]? | select(.level == "error" or .level == "warning") | "\(.level): \(.ruleId): \(.message.text)"' ../codeql-results/*.sarif
+            exit 1
+          fi
