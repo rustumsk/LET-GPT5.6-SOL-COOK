@@ -1,0 +1,47 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Detect application
+        id: app
+        shell: bash
+        run: test -f package-lock.json && echo 'present=true' >> "$GITHUB_OUTPUT" || echo 'present=false' >> "$GITHUB_OUTPUT"
+      - if: steps.app.outputs.present == 'true'
+        run: npm ci
+      - if: steps.app.outputs.present == 'true'
+        run: npm run format:check
+      - if: steps.app.outputs.present == 'true'
+        run: npm run lint
+      - if: steps.app.outputs.present == 'true'
+        run: npm run typecheck
+      - if: steps.app.outputs.present == 'true'
+        run: npm test
+      - if: steps.app.outputs.present == 'true'
+        run: npm run test:integration
+      - if: steps.app.outputs.present == 'true'
+        run: npm run build
+      - if: steps.app.outputs.present == 'true'
+        run: npm audit --audit-level=high
+      - if: steps.app.outputs.present == 'true'
+        run: npm run migrations:check
+  secrets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2

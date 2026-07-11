@@ -1,0 +1,30 @@
+name: Product change
+description: Propose a measurable product or validation change
+title: "[Product]: "
+labels: ["product"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended metric outcome
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Security, privacy, legal, and operational risks
+    validations:
+      required: true
+
