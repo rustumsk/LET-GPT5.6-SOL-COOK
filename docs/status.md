@@ -2,7 +2,7 @@
 
 - **Hypothesis:** Small agencies will use a fast calculator/change-order preview to recover unbilled scope.
 - **Users / activated / WAU / core actions / leads / revenue:** 0 / 0 / 0 / 0 / 0 / $0 (pre-launch).
-- **Acquisition:** Public validation preview is live; external distribution has not started.
+- **Acquisition:** Public validation preview is live; five personalized founder-led agency interview invitations sent on 2026-07-11, with no bulk list or tracking.
 - **Funnel:** No production data.
 - **Shipped:** Repository operating system, scored discovery, validation/distribution plans, static calculator, and secure public preview.
 - **Incidents/security findings:** None. Public signup and personal-data collection remain disabled.

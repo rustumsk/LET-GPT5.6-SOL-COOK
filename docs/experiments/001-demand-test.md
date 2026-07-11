@@ -4,7 +4,8 @@
 - Segment: 2–15 person web/design agencies using fixed-fee projects.
 - Change: publish a free, no-signup calculator and preview.
 - Metric: qualified completions, preview generations, and interview intent.
-- Baseline: 0.
+- Baseline: 0 qualified visits, completions, previews, and interviews before outreach.
 - Success/failure: defined in `docs/validation-plan.md`.
-- Start/end: starts at public launch; ends after 14 days or 100 qualified visits.
-- Result/decision/follow-up: pending.
+- Start/end: 2026-07-11 through 2026-07-25, or earlier if 100 qualified visits are reached.
+- Result: Public preview verified; five individually researched founder-led agencies received personalized, opt-out-friendly interview invitations on 2026-07-11. Responses, qualified visits, completions, previews, and interviews: 0 as of the initial send.
+- Decision/follow-up: Wait at least three business days before one optional follow-up. Do not contact opt-outs or send more volume until delivery/reply quality is reviewed.
