@@ -11,4 +11,3 @@
 - **Only after validation:** Accounts, saved projects, client approval links, email delivery, payments, integrations, and AI extraction.
 
 The initial asset stores no input on a server. A waitlist is deferred until an approved privacy notice and data endpoint exist; the CTA uses a user-initiated email draft during the earliest concierge test.
-

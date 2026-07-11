@@ -21,4 +21,3 @@ body:
       label: Expected behavior
     validations:
       required: true
-

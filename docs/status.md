@@ -11,4 +11,3 @@
 - **Bottleneck:** Publish the validation asset and acquire qualified traffic.
 - **Next priorities:** Ship calculator; verify accessibility/security; obtain owner approval/account access for deployment and external distribution.
 - **Owner actions required:** None for local work. Deployment will require project-scoped hosting access; communication under owner identity requires approval.
-

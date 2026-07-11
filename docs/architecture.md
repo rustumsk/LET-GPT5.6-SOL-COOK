@@ -7,4 +7,3 @@ A static Next.js TypeScript application performs all calculations in the browser
 ## Evolution gate
 
 Only after validation: modular-monolith server routes, PostgreSQL with migrations, managed authentication, first-party events, and vendor adapters. New infrastructure requires an ADR and data-map update.
-

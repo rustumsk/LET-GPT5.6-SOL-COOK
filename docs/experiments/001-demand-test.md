@@ -8,4 +8,3 @@
 - Success/failure: defined in `docs/validation-plan.md`.
 - Start/end: starts at public launch; ends after 14 days or 100 qualified visits.
 - Result/decision/follow-up: pending.
-

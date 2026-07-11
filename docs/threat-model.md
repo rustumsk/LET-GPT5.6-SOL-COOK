@@ -18,4 +18,3 @@ Controls: React escaping, numeric bounds, no raw HTML, lockfile, Dependabot, Cod
 - Prompt injection: no LLM; an ADR and adversarial tests are required if added.
 
 Residual risk: calculator outputs are estimates. Copy must not imply accounting, legal, or contractual advice.
-

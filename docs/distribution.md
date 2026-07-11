@@ -7,4 +7,3 @@
 - **Measurement:** UTM source, qualified visits, calculator completions, preview generations, and interviews by channel.
 
 Message draft (requires owner approval before sending under their identity): “I’m researching how small agencies handle the ‘one small change’ that falls outside a fixed-fee scope. I made a free calculator that shows the margin impact and formats a neutral change summary. No signup and inputs stay in your browser. Would you be willing to try it on a recent example and tell me where it breaks? No follow-up if you’re not interested.”
-

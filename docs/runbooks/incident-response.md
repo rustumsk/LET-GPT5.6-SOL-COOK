@@ -6,4 +6,3 @@
 4. Escalate production, privacy, legal, credential, or cost incidents to the owner.
 5. Fix through a reviewed branch, run smoke/security checks, and document timeline/root cause.
 6. Notify affected users only with owner/legal approval and delete retained data according to policy.
-

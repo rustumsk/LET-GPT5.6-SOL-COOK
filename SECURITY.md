@@ -14,4 +14,3 @@ Do not open a public issue. Use GitHub's private vulnerability reporting for thi
 - CI: GitHub Actions encrypted secrets or OIDC; prefer environment-scoped secrets.
 - Hosting: the provider's encrypted project environment variables.
 - Use project-specific, least-privilege, revocable credentials. Never place secrets in code, logs, issues, screenshots, commits, or pull requests.
-

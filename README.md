@@ -13,4 +13,3 @@ Application setup lands in the validation-asset milestone. No credentials are ne
 ## Governance
 
 `AUTONOMOUS_APP_CHARTER.md` is the governing specification. Security reports should follow `SECURITY.md`.
-

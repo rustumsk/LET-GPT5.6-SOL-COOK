@@ -11,4 +11,3 @@ Before changing this repository, read `AUTONOMOUS_APP_CHARTER.md`, `README.md`, 
 - Record assumptions and unresolved risks in the relevant issue, decision, experiment, or pull request.
 - Open a pull request; do not push unreviewed changes to protected `main`.
 - Stop and escalate before credentials, spending, legal approval, production access, external communication under the owner's identity, destructive action, or a material experiment change.
-
