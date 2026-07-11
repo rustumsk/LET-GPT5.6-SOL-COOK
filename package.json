@@ -15,6 +15,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:integration": "vitest run tests/integration",
+    "smoke": "node scripts/smoke-test.mjs",
     "migrations:check": "node scripts/check-migrations.mjs"
   },
   "dependencies": {
