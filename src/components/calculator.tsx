@@ -214,6 +214,13 @@ export function Calculator() {
         <div className="result" aria-live="polite">
           <p>Estimated annual margin leak</p>
           <strong>{result ? money.format(result.annualCost) : "—"}</strong>
+          <button
+            className="primary result-action"
+            disabled={!input}
+            onClick={showPreview}
+          >
+            Turn the next request into a change order
+          </button>
           {result ? (
             <div className="result-lines">
               <span>
@@ -232,9 +239,6 @@ export function Calculator() {
               Fix the highlighted inputs to see your estimate.
             </p>
           )}
-          <button className="primary" disabled={!input} onClick={showPreview}>
-            Turn the next request into a change order
-          </button>
           <p className="formula">
             Hours × requests × projects × internal cost. Recoverable revenue
             adds your target markup.

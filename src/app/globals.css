@@ -276,9 +276,13 @@ a {
   margin: 0;
 }
 .result > strong {
+  display: block;
   font: 600 clamp(3.5rem, 6vw, 6rem) var(--font-display);
   letter-spacing: -0.07em;
   color: var(--rust);
+}
+.result-action {
+  margin: 0.35rem 0 0.75rem;
 }
 .result-lines {
   display: grid;
