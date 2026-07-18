@@ -63,6 +63,7 @@ export function Calculator() {
   const [preview, setPreview] = useState(false);
   const [copyStatus, setCopyStatus] = useState("");
   const [shareStatus, setShareStatus] = useState("");
+  const startedTracked = useRef(false);
   const completedTracked = useRef(false);
   const parsed = useMemo(
     () =>
@@ -99,6 +100,11 @@ export function Calculator() {
     setDraft(toDraft(presets[name]));
     setActivePreset(name);
     track("preset_selected");
+  };
+  const start = () => {
+    if (startedTracked.current) return;
+    startedTracked.current = true;
+    track("calculator_started");
   };
   const showPreview = () => {
     if (!input) return;
@@ -157,7 +163,7 @@ export function Calculator() {
         </div>
       </div>
       <div className="workspace">
-        <form onFocus={() => track("calculator_started")}>
+        <form onFocus={start}>
           <Field
             label="Typical project value"
             prefix="$"
