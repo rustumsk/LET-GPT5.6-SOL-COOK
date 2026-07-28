@@ -4,6 +4,9 @@
   --acid: #dfff3f;
   --rust: #e85c38;
   --line: rgba(23, 34, 28, 0.18);
+  --font-body: "Aptos", "Segoe UI", "Helvetica Neue", "Nimbus Sans", sans-serif;
+  --font-display:
+    "Bahnschrift", "Aptos Display", "Trebuchet MS", "Arial Narrow", sans-serif;
 }
 * {
   box-sizing: border-box;

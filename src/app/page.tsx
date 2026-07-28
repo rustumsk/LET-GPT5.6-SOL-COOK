@@ -1,8 +1,12 @@
+import Link from "next/link";
+import { AnalyticsBeacon } from "@/components/analytics-beacon";
 import { Calculator } from "@/components/calculator";
+import { TrackedMailto } from "@/components/tracked-mailto";
 
 export default function Home() {
   return (
     <main>
+      <AnalyticsBeacon />
       <header className="nav">
         <a className="brand" href="#top" aria-label="ScopeSignal home">
           ScopeSignal<span>.</span>
@@ -108,9 +112,10 @@ export default function Home() {
           An early demand experiment. Estimates are not legal or accounting
           advice.
         </p>
-        <a href="mailto:?subject=ScopeSignal%20feedback&body=I%20tried%20ScopeSignal%20and...">
+        <Link href="/privacy">Privacy</Link>
+        <TrackedMailto href="mailto:?subject=ScopeSignal%20feedback&body=I%20tried%20ScopeSignal%20and...">
           Share feedback
-        </a>
+        </TrackedMailto>
       </footer>
     </main>
   );
